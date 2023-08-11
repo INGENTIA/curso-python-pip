@@ -1,9 +1,9 @@
 FROM python:3.8
 
 WORKDIR /app
-COPY requirements.txt requirements.txt
+COPY requirements.txt /app/requirements.txt
 
-RUN pip isntall --no-cache-dir --upgrade -r requirements.txt
+RUN pip isntall --no-cache-dir --upgrade -r /app/requirements.txt
 
 COPY . / app/
 
